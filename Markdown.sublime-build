@@ -1,0 +1,4 @@
+{
+  "target": "markdown_build",
+  "selector": "text.html.markdown"
+}
