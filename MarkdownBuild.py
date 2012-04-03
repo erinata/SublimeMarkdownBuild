@@ -26,4 +26,5 @@ class MarkdownBuild(sublime_plugin.WindowCommand):
         output = tempfile.NamedTemporaryFile(delete=False, suffix='.html')
         output.write(html.encode('UTF-8'))
         output.close()
-        os.system(output.name)
+        self.window.run_command('open_url', {"url": output.name})
+        

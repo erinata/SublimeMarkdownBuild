@@ -1,10 +1,10 @@
-# Sublime Markdown (version 0.1.0)
+# Sublime Markdown (version 0.2.0)
 
 This is a Sublime Text plugin for building markdown.
 
 ## Installation
 
-1. Download the package from https://github.com/downloads/erinata/SublimeMarkdown/SublimeMarkdownBuild-0.1.0.zip
+1. Download the package from https://github.com/downloads/erinata/SublimeMarkdown/SublimeMarkdownBuild-0.2.0.zip
 2. Extract the folder SublimeMarkdownBuild
 3. Copy the SublimeMarkdownBuild folder to the package folder of SublimeText 2
 

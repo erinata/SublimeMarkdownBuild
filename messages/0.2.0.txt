@@ -1,0 +1,4 @@
+SublimeMarkdownBuild 0.2.0
+
+- Use github like CSS
+- Use Sublime method to open the html (So the the console window is suppressed)
