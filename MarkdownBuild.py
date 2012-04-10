@@ -5,7 +5,7 @@ import os
 import tempfile
 
 
-class MarkdownBuild(sublime_plugin.WindowCommand):remove
+class MarkdownBuild(sublime_plugin.WindowCommand):
     def run(self):
         view = self.window.active_view()
         if not view:
@@ -27,4 +27,3 @@ class MarkdownBuild(sublime_plugin.WindowCommand):remove
         output.write(html.encode('UTF-8'))
         output.close()
         self.window.run_command('open_url', {"url": output.name})
-        
