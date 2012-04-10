@@ -16,7 +16,7 @@ class MarkdownBuild(sublime_plugin.WindowCommand):
         contents = view.substr(sublime.Region(0, view.size()))
         md = markdown_python.markdown(contents)
         html = '<html><meta charset="UTF-8">'
-        css = os.path.join(sublime.packages_path(), 'SublimeMarkdownBuild', 'markdown.css')
+        css = os.path.join(sublime.packages_path(), 'MarkdownBuild', 'markdown.css')
         if (os.path.isfile(css)):
             styles = open(css, 'r').read()
             html += '<style>' + styles + '</style>'
