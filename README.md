@@ -4,7 +4,6 @@ This is a Sublime Text plugin for building markdown.
 
 ## Installation
 
-
 Install using Package Control (Recommanded)
 
 1. I guess most Sublime Text 2 users are using Sublime Package Control. If not, pleast install in from here <http://wbond.net/sublime_packages/package_control>
@@ -15,7 +14,6 @@ Install manually
 
 1. Download the repo
 2. Copy everything in the repo to a folder named "MarkdownBuild" under the package folder of SublimeText 2 (create it if it doesn't exist)
-
 
 ## Usage
 
