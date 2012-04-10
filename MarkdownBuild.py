@@ -5,7 +5,7 @@ import os
 import tempfile
 
 
-class MarkdownBuild(sublime_plugin.WindowCommand):
+class MarkdownBuild(sublime_plugin.WindowCommand):remove
     def run(self):
         view = self.window.active_view()
         if not view:

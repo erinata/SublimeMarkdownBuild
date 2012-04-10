@@ -4,9 +4,18 @@ This is a Sublime Text plugin for building markdown.
 
 ## Installation
 
-1. Download the package from https://github.com/downloads/erinata/SublimeMarkdown/SublimeMarkdownBuild-0.2.0.zip
-2. Extract the folder SublimeMarkdownBuild
-3. Copy the SublimeMarkdownBuild folder to the package folder of SublimeText 2
+
+Install using Package Control (Recommanded)
+
+1. I guess most Sublime Text 2 users are using Sublime Package Control. If not, pleast install in from here <http://wbond.net/sublime_packages/package_control>
+2. Go to Preference > Package Control, and Choose "Install Package"
+3. Choose the package named "MarkdownBuild" to install it
+
+Install manually
+
+1. Download the repo
+2. Copy everything in the repo to a folder named "MarkdownBuild" under the package folder of SublimeText 2 (create it if it doesn't exist)
+
 
 ## Usage
 
