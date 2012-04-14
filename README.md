@@ -1,4 +1,4 @@
-# Sublime Markdown (version 0.2.0)
+# Sublime Markdown (version 0.2.1)
 
 This is a Sublime Text plugin for building markdown.
 
