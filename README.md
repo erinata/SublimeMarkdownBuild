@@ -1,4 +1,4 @@
-# Sublime Markdown (version 0.2.1)
+# Sublime Markdown (version 0.3.0)
 
 This is a Sublime Text plugin for building markdown.
 
@@ -25,7 +25,7 @@ I also include a Markdown.tmLanguage file so the markdown files' syntax should b
 
 ## Operating Systems
 
-I only tested this on Windows, I hope that it works on OSX and Linux.
+This package should work on Windows, OSX, and Linux
 
 ## License
 

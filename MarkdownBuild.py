@@ -3,7 +3,6 @@ import sublime_plugin
 import markdown_python
 import os
 import tempfile
-import subprocess
 import webbrowser
 
 

@@ -1,3 +1,0 @@
-SublimeMarkdownBuild 0.2.1
-
-- make it work in linux
