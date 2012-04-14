@@ -3,7 +3,9 @@ import sublime_plugin
 import markdown_python
 import os
 import tempfile
-import urllib
+import subprocess
+import webbrowser
+
 
 class MarkdownBuild(sublime_plugin.WindowCommand):
     def run(self):
@@ -26,4 +28,8 @@ class MarkdownBuild(sublime_plugin.WindowCommand):
         output = tempfile.NamedTemporaryFile(delete=False, suffix='.html')
         output.write(html.encode('UTF-8'))
         output.close()
-        self.window.run_command('open_url', {"url": "file://" + urllib.quote(output.name)})
+        webbrowser.open("file://"  + output.name)   
+        #if sublime.platform() == 'osx':
+        #    subprocess.call("open " + output.name, shell=True)
+        #else:
+        #    self.window.run_command('open_url', {"url": output.name})

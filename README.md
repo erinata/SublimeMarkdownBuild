@@ -1,4 +1,4 @@
-# Sublime Markdown (version 0.2.0)
+# Sublime Markdown (version 0.2.1)
 
 This is a Sublime Text plugin for building markdown.
 
@@ -6,7 +6,7 @@ This is a Sublime Text plugin for building markdown.
 
 Install using Package Control (Recommanded)
 
-1. I guess most Sublime Text 2 users are using Sublime Package Control. If not, please install in from here <http://wbond.net/sublime_packages/package_control>
+1. I guess most Sublime Text 2 users are using Sublime Package Control. If not, please install it from here <http://wbond.net/sublime_packages/package_control>
 2. Go to Preference > Package Control, and Choose "Install Package"
 3. Choose the package named "MarkdownBuild" to install it
 
