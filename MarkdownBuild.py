@@ -5,6 +5,10 @@ import os
 import tempfile
 import webbrowser
 
+#TODO: option to generate html using the same name as the markdown file
+#TODO: option to use or not using css
+#TODO: option to embedded the css into the file or using external file
+#TODO: option to set charset
 
 class MarkdownBuild(sublime_plugin.WindowCommand):
     def run(self):
