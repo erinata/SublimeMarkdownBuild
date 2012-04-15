@@ -1,4 +1,6 @@
 {
     "output_html" : false,
-    "focus_sublime" : true
+    "use_css" : true,
+    "focus_sublime" : true,
+    "charset" : "UTF-8" 
 }
