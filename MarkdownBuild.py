@@ -5,10 +5,12 @@ import os
 import tempfile
 import webbrowser
 
-#TODO: option to embedded the css into the file or using external file
-#TODO: Some way to make html prettier?
+# TODO: set focus back to sublime after build
+# TODO: option to embedded the css into the file or using external file
+# TODO: Some way to make html prettier?
 class MarkdownBuild(sublime_plugin.WindowCommand):
     def run(self):
+        #hwnd = self.window.hwnd()
         s = sublime.load_settings("MarkdownBuild.sublime-settings")
         output_html = s.get("output_html", False)
         use_css = s.get("use_css", True)

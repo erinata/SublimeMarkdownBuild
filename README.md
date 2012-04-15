@@ -1,4 +1,4 @@
-# MarkdownBuild (version 0.3.0)
+# MarkdownBuild (version 0.4.0)
 
 This is a Sublime Text plugin for building markdown into html and open it in browser.
 
@@ -22,6 +22,13 @@ Originally this plugin is named "SublimeMarkdown" which features automatic bulle
 Press Ctrl+b to build the markdown file to html and view it in the browser. It used Python-markdown to build the html file but you do not need to have Python installed in order to use this plugin. It used the Python inside Sublime Text to get the job done.
 
 I also include a Markdown.tmLanguage file so the markdown files' syntax should be highlighted. It works well with the theme "SunBurst" but it should work for other themes too.
+
+## Customization
+
+You can customize the behaviour of MarkdownBuild in that MarkdownBuild.sublime-settings file.
+- output_html - set it to true if you want to have an html file generated at the same folder of your markdown file (default: false)
+- use_css - set it to false if you do not want to use css in the generated file (default: true)
+- charset - the charset in the meta tag of html, (default: "UTF-8")
 
 ## Operating Systems
 
