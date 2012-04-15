@@ -1,6 +1,6 @@
-# Sublime Markdown (version 0.3.0)
+# MarkdownBuild (version 0.3.0)
 
-This is a Sublime Text plugin for building markdown.
+This is a Sublime Text plugin for building markdown into html and open it in browser.
 
 ## Installation
 
@@ -25,7 +25,7 @@ I also include a Markdown.tmLanguage file so the markdown files' syntax should b
 
 ## Operating Systems
 
-This package should work on Windows, OSX, and Linux
+This package works on Windows, OSX, and Linux
 
 ## License
 
