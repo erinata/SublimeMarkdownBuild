@@ -16,6 +16,7 @@ class MarkdownBuild(sublime_plugin.WindowCommand):
         #hwnd = sublime.active_window().hwnd()
         s = sublime.load_settings("MarkdownBuild.sublime-settings")
         output_html = s.get("output_html", False)
+        open_html_in = s.get("open_html_in", "browser")
         use_css = s.get("use_css", True)
         charset = s.get("charset", "UTF-8")
 
@@ -44,7 +45,14 @@ class MarkdownBuild(sublime_plugin.WindowCommand):
 
         output.write(html.encode('UTF-8'))
         output.close()
-        webbrowser.open("file://" + output.name)
+
+        if open_html_in == "both":
+            webbrowser.open("file://" + output.name)
+            self.window.open_file(output.name)
+        elif open_html_in == "sublime":
+            self.window.open_file(output.name)
+        else:
+            webbrowser.open("file://" + output.name)
                 
         #sublime.set_timeout(partial(ctypes.windll.user32.SwitchToThisWindow,sublime.active_window().hwnd(), 0), 250)
         #sublime.set_timeout(partial(ctypes.windll.user32.ShowWindow,sublime.active_window().hwnd(), 5), 500)
