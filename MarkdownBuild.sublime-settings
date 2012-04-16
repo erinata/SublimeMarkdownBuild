@@ -1,6 +1,6 @@
 {
     "output_html" : false,
-    "open_html_in" : "both",  // possible values are "browser", "sublime", or "both", default is "browser"
+    "open_html_in" : "browser",  // possible values are "browser", "sublime", or "both", default is "browser"
     "use_css" : true,
     "charset" : "UTF-8" 
 }
