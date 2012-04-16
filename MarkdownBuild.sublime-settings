@@ -1,5 +1,5 @@
 {
-    "output_html" : false,
+    "output_html" : true,
     "use_css" : true,
     "charset" : "UTF-8" 
 }

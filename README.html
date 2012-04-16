@@ -1,0 +1,102 @@
+<html><meta charset="UTF-8"><style>html { 
+    font-size: 100%; 
+    overflow-y: scroll; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+}
+
+body{
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    color: #333;
+    background-color: #fff;
+    border-color: #999999;
+    border-width: 2px;
+    line-height: 1.5;
+    margin: 2em 3em;
+    text-align:left;
+    padding: 0 100px 0 100px;
+}
+
+pre{
+    background-color: #eee;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: auto;
+}
+code{
+    background-color: #eee;
+    padding: 1px 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; 
+}
+li p{
+    margin: 0.3em;
+}
+li{
+    list-style-type: disc;
+}
+a:link, a:visited{
+    color: #33e;
+    text-decoration: none;
+}
+a:hover{
+    color: #00f;
+    text-shadow:1px 1px 2px #ccf;
+    text-decoration:underline;
+}
+h1{
+    color: #999;
+    font-weight: 400;
+    font-size: 36px;
+}
+h2{
+    border-bottom: 1px dotted #aaa;
+    margin-bottom: 1em;
+    color: #333;
+    font-size: 30px;
+}
+h3{
+    color: #666;
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+h5 {
+    font-size: 18px;
+}
+.shadow{
+    -webkit-box-shadow:0 5px 15px #000;
+    -moz-box-shadow:0 5px 15px #000;
+    box-shadow:0 5px 15px #000;     
+}
+</style><body><h1>MarkdownBuild (version 0.4.0)</h1>
+<p>This is a Sublime Text plugin for building markdown into html and open it in browser.</p>
+<h2>Installation</h2>
+<p>Install using Package Control (Recommanded)</p>
+<ol>
+<li>I guess most Sublime Text 2 users are using Sublime Package Control. If not, please install it from here <a href="http://wbond.net/sublime_packages/package_control">http://wbond.net/sublime_packages/package_control</a></li>
+<li>Go to Preference &gt; Package Control, and Choose "Install Package"</li>
+<li>Choose the package named "MarkdownBuild" to install it</li>
+</ol>
+<p>Install manually</p>
+<ol>
+<li>Download the repo</li>
+<li>Copy everything in the repo to a folder named "MarkdownBuild" under the package folder of SublimeText 2 (create it if it doesn't exist)</li>
+</ol>
+<h2>Usage</h2>
+<p>Originally this plugin is named "SublimeMarkdown" which features automatic bullet points, numbered lists etc. Now the bullet points functionality is extracted to a separated plugin named "SublimeBullet" <a href="https://github.com/erinata/SublimeBullet">https://github.com/erinata/SublimeBullet</a> </p>
+<p>Press Ctrl+b to build the markdown file to html and view it in the browser. It used Python-markdown to build the html file but you do not need to have Python installed in order to use this plugin. This package utilizes the Python inside Sublime Text to get the job done.</p>
+<p>I also include a Markdown.tmLanguage file so the markdown files' syntax should be highlighted. It works well with the theme "SunBurst" but it should work for other themes too.</p>
+<h2>Customization</h2>
+<p>You can customize the behaviour of MarkdownBuild in that MarkdownBuild.sublime-settings file.
+- output_html - set it to true if you want to have an html file generated at the same folder of your markdown file (default: false)
+- use_css - set it to false if you do not want to use css in the generated file (default: true)
+- charset - the charset in the meta tag of html, (default: "UTF-8")</p>
+<h2>Operating Systems</h2>
+<p>This package works on Windows, OSX, and Linux</p>
+<h2>License</h2>
+<p>Copyright (C) 2012 Tom Lam. MIT License.</p></body></html>

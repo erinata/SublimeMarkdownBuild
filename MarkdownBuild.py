@@ -4,13 +4,16 @@ import markdown_python
 import os
 import tempfile
 import webbrowser
+#import ctypes
+#from functools import partial
+
 
 # TODO: set focus back to sublime after build
 # TODO: option to embedded the css into the file or using external file
 # TODO: Some way to make html prettier?
 class MarkdownBuild(sublime_plugin.WindowCommand):
     def run(self):
-        #hwnd = self.window.hwnd()
+        #hwnd = sublime.active_window().hwnd()
         s = sublime.load_settings("MarkdownBuild.sublime-settings")
         output_html = s.get("output_html", False)
         use_css = s.get("use_css", True)
@@ -42,3 +45,8 @@ class MarkdownBuild(sublime_plugin.WindowCommand):
         output.write(html.encode('UTF-8'))
         output.close()
         webbrowser.open("file://" + output.name)
+                
+        #sublime.set_timeout(partial(ctypes.windll.user32.SwitchToThisWindow,sublime.active_window().hwnd(), 0), 250)
+        #sublime.set_timeout(partial(ctypes.windll.user32.ShowWindow,sublime.active_window().hwnd(), 5), 500)
+        #sublime.set_timeout(partial(ctypes.windll.user32.SetActiveWindow,sublime.active_window().hwnd()), 500)
+        #sublime.set_timeout(partial(ctypes.windll.user32.SetFocus,sublime.active_window().hwnd()), 250)
