@@ -31,6 +31,22 @@ You can customize the behaviour of MarkdownBuild in that MarkdownBuild.sublime-s
 - use_css - set it to false if you do not want to use css in the generated file (default: true)
 - charset - the charset in the meta tag of html, (default: "UTF-8")
 
+## Building documents other than Markdown
+
+This project only target at building Markdown. But it can be modified to support other formats.
+
+For textile support please see Xkeeper's SublimeTextileBuild <https://github.com/Xkeeper/SublimeTextileBuild>
+
+## Contribution
+
+Please fork this project if you want it to support other document formats. In most case the only part of code that you need to change is the line
+
+    md = markdown_python.markdown(contents)
+
+in the file `MarkdownBuild.py`. Just change it to the parser you likem, this plugin will build the html and show it in the browser accordingly.
+
+Of course you can rename the files, commands, or css ...... etc. Xkeeper's SublimeTextileBuild <https://github.com/Xkeeper/SublimeTextileBuild> is a good example.
+
 ## Operating Systems
 
 This package works on Windows, OSX, and Linux
