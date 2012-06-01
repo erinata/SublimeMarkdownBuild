@@ -35,7 +35,7 @@ code{
 li p{
     margin: 0.3em;
 }
-li{
+ul > li{
     list-style-type: disc;
 }
 a:link, a:visited{
