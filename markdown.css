@@ -32,6 +32,10 @@ code{
     -moz-border-radius: 2px;
     border-radius: 2px; 
 }
+pre code {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 li p{
     margin: 0.3em;
 }
